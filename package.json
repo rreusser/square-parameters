@@ -1,0 +1,24 @@
+{
+  "name": "square-parameters",
+  "version": "1.0.0",
+  "description": "Embed frontmatter-like config at the beginning of a string",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "node test/test.js | tap-spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/rreusser/square-parameters.git"
+  },
+  "keywords": [
+    "config",
+    "parameters",
+    "frontmatter"
+  ],
+  "author": "Ricky Reusser",
+  "license": "MIT",
+  "devDependencies": {
+    "tap-spec": "^4.0.2",
+    "tape": "^4.0.1"
+  }
+}
