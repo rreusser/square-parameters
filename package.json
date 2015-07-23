@@ -1,6 +1,6 @@
 {
   "name": "square-parameters",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Embed frontmatter-like config at the beginning of a string",
   "main": "lib/index.js",
   "scripts": {

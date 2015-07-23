@@ -11,8 +11,8 @@ For my [gulp-markdown-equations](https://github.com/rreusser/gulp-markdown-equat
 2. Requires minimal escaping
 3. Is easy to separate from content
 4. Is very concise
-5. Takes like three second to comprehend everything
-5. Is not easily confused with any well-known format so people don't make incorrect assumptions about which syntax it does/doesn't support
+5. Takes like three seconds to comprehend everything
+5. Is not easily confused with any well-known format so people don't make incorrect assumptions about which syntax it does/doesn't support and so I'm not on the hook for supporting a specific format.
 
 And so we get square-parameters. Perhaps not worthy of its own module, but I felt weird to hard-code it into another. Let me know if you have a better idea.
 
@@ -36,6 +36,8 @@ sp(" [foo=bar]sample string")
 
 ### `require('square-parameters')( string )`
 Extracts config from a string and returns two parts: `content` and `params`. `content` is a string with the parameters chopped off, and `params` is an object containing key/value pairs.
+
+**Returns**: Content and parameters, i.e. `{content: "...", params: {...}}`
 
 
 ## Credits
