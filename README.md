@@ -7,7 +7,7 @@ Embed frontmatter-like config at the beginning of a string
 
 For my [gulp-markdown-equations](https://github.com/rreusser/gulp-markdown-equations) module, I need a very quick and easy way to embed config at the beginning of an inline string. It needs to be kinda like a query string, not as verbose or flexible as JSON, sorta like frontmatter... but not quite any of those. Specifically it needs to satisfy these criteria:
 
-1. Requires no encoding (like query strings)
+1. Requires no encoding
 2. Requires minimal escaping
 3. Is easy to separate from content
 4. Is very concise
