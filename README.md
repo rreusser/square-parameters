@@ -19,12 +19,16 @@ And so we get square-parameters. Perhaps not worthy of its own module, but I fel
 
 ## Examples
 
-```
+```javascript
 var sp = require('square-parameters')
 
 // Pretty straightforward:
 sp("[foo=bar][baz=bop]sample string")
   // => { content: "sample string", params: {foo: "bar", baz: "bop"} }
+
+// Whitespace is fine
+sp("[a parameter=some value]sample string")
+  // => { content: "sample string", params: {"a parameter": "some value"} }
 
 // Leading whitespace not allowed:
 sp(" [foo=bar]sample string")
