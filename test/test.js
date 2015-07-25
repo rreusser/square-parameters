@@ -38,6 +38,13 @@ test('allows bare params: "[displaystyle]y=7"',function(t) {
   t.end()
 })
 
+test('allows bare params followed by regular: "[displaystyle][foo=bar]y=7"',function(t) {
+  var parsed = extract('[displaystyle]y=7')
+  t.deepEqual( parsed.content, 'y=7', 'content = "y=7"')
+  t.deepEqual( parsed.params, {displaystyle: true}, 'params = ' + JSON.stringify({displaystyle:true, foo: 'bar'}) )
+  t.end()
+})
+
 test('allows empty hashes: "[]y=7"',function(t) {
   var parsed = extract('[]y=7')
   t.deepEqual( parsed.content, 'y=7', 'content = "y=7"')
