@@ -1,6 +1,6 @@
 # square-parameters [![Build Status](https://travis-ci.org/rreusser/square-parameters.svg)](https://travis-ci.org/rreusser/square-parameters) [![npm version](https://badge.fury.io/js/square-parameters.svg)](http://badge.fury.io/js/square-parameters) [![Dependency Status](https://david-dm.org/rreusser/square-parameters.svg)](https://david-dm.org/rreusser/square-parameters)
 
-Embed frontmatter-like config at the beginning of a string
+Embed really simple parameters at the beginning of a string
 
 
 ## Introduction
